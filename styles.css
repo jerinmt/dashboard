@@ -1,0 +1,167 @@
+html {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    -webkit-text-size-adjust: 100%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    line-height: 1.1;
+    background-color: rgb(212, 211, 211);
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: 1fr 3fr 3fr;
+}
+img, picture, video, canvas, svg {
+    max-inline-size: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+img {
+    height: 30px;
+    width: 30px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/*-------------------------------------------------------------------------------------------------*/
+.sidebar {
+    grid-row: 1/4;
+    background-color: rgb(0, 110, 255);
+    display: grid;
+    align-content: start;
+    gap: 35px;
+    padding: 15px;
+    color: white;
+}
+.nav,
+.sideTools {
+    display: grid;
+    gap: 4px;
+    padding-left: 4px;
+}
+.navItems a,
+.toolItems a,
+.logo a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header {
+    grid-column: 2/4;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+.header div {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+.searchBar {
+    padding: 10px;
+    gap: 5px;
+}
+.searchBar input {
+    flex: 1;
+    background-color: rgb(212, 211, 211);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.topButtons {
+    justify-content: end;
+    gap: 15px;
+}
+.userInfo {
+    gap: 10px;
+}
+button {
+    background-color: rgb(0, 110, 255);
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 4px 40px;
+}
+.bottomButtons {
+    justify-content: center;
+    gap: 40px;
+}
+
+.projects {
+    grid-area: 2/2/4/3;
+    padding: 10px;
+}
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 15px;
+}
+.projectCards {
+    background-color: white;
+    border-left: 7px solid orange;
+    border-radius: 4px;
+    padding: 25px 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.projectIcons {
+    align-self: flex-end;
+}
+
+.announcements {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.sideCards {
+    margin: 5px 10px 0px 0px;
+    background-color: white;
+    border-radius: 10px;
+    flex: 1;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sideCards div {
+    flex: 1;
+}
+
+.trending {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.trendCards{
+    display: flex;
+}
+.profilePic {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.userInfo .profilePic {
+    height: 50px;
+    width: 50px;
+}
+button:hover {
+    opacity: 0.8;
+}
